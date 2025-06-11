@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bitk04kqfbf14"
+path="res://.godot/imported/Csárdás egyveleg (Mulatós Karaoke).ogg-dc4ba654e33efee5739ab064a8ca824b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sfx/Csárdás egyveleg (Mulatós Karaoke).ogg"
+dest_files=["res://.godot/imported/Csárdás egyveleg (Mulatós Karaoke).ogg-dc4ba654e33efee5739ab064a8ca824b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

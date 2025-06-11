@@ -61,7 +61,7 @@ sprite_frames = SubResource("SpriteFrames_nao87")
 animation = &"1"
 frame_progress = 0.810122
 
-[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." groups=["mobs"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 16)
