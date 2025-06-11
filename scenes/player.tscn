@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://b3km7jh5dwquw"]
 
 [ext_resource type="Texture2D" uid="uid://e3ldphkfk217" path="res://assets/sprites/Zsolti-walking-Sheet.png" id="1_3vyb7"]
-[ext_resource type="Script" uid="uid://drx163ptmdjxd" path="res://scenes/player.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://6mces674nobm" path="res://scripts/player.gd" id="1_g2els"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g2els"]
 atlas = ExtResource("1_3vyb7")
@@ -55,7 +55,7 @@ position = Vector2(990, 489)
 script = ExtResource("1_g2els")
 metadata/_edit_group_ = true
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="walk_animation" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_fjrip")
 animation = &"walk"
 autoplay = "walk"
@@ -64,3 +64,5 @@ frame_progress = 0.385464
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 16)
 shape = SubResource("CapsuleShape2D_smehm")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
